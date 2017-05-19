@@ -7,7 +7,7 @@ ItemRenamer = (function() {
 
 			this.replacements = [
 				prompt( 'What would you like to replace?\nEmpty if you are renaming instead of replacing.', 'Eg: source.' ),
-				prompt( 'What would you like to replace it with?\nUse %i placeholder to auto-increment naming.', 'Eg: replacement, or replacement-%i' )
+				prompt( 'What would you like to replace it with?\nUse %i placeholder to auto-increment naming. "name-%i" will name items: "name-1", "name-2", etc.', 'Eg: replacement, or replacement-%i' )
 			];
 
 			this.renameItems( app.activeDocument.selection );
